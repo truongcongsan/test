@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Share+Tech+Mono&display=swap");
+@keyframes sideBarShow {
+  from {
+    left: -190px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes sideBarHide {
+  from {
+    left: 0;
+  }
+  to {
+    left: -190px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 82px);
+    background-color: lightgray;
+}
+.sidebar-show {
+  position: absolute;
+  width: 200px;
+  height: calc(100vh - 82px);
+  background-color: lightskyblue;
+  animation: sideBarShow 1s ease-in 0s forwards;
+  z-index: 999;
+}
+.sidebar-hide {
+  left: -190px;
+  position: absolute;
+  width: 200px;
+  height: calc(100vh - 82px);
+  background-color: lightskyblue;
+  animation: sideBarHide 1s ease-in 0s forwards;
+  z-index: 999;
+}
+.btn-toggle {
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: coral;
+  cursor: pointer;
+  transform: rotate(20deg);
+  transition: all 0.5s;
+}
+.btn-toggle:hover {
+  transform: rotate(-380deg);
+}
+.stick {
+  position: absolute;
+  height: 4px;
+  width: 32px;
+  background-color: white;
+  left: 4px;
+}
+.one-close,
+.two-close,
+.three-close,
+.one-open,
+.two-open,
+.three-open {
+  transition: all 1s;
+}
+.one-close {
+  top: 10px;
+}
+.two-close {
+  top: 18px;
+}
+.three-close {
+  top: 26px;
+}
+.one-open {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+.two-open {
+  top: 18px;
+  transform: rotate(45deg);
+}
+.three-open {
+  top: 18px;
+  transform: rotate(-45deg);
+}
+.sidebar-menu {
+  padding: 10px;
+}
+.sidebar-item {
+  margin: 10px;
+  text-decoration: none;
+}
+.sidebar-item li {
+  padding: 15px;
+  background-color: white;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: "Titan One", cursive;
+}
+.sidebar-item li:hover {
+  background-color: darkgray;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* TOP MENU */
+.navbar {
+  width: 100%;
+  padding: 12px;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+.circle{
+    display: flex;
+}
+.circle div{
+    background-color: white;
+    margin-left: 8px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    position: absolute;
+    right: 0;
+    height: calc(100vh - 82px);
+    width: calc(100% - 10px);
+    background-color: lightgray;
+    
+}
+.title-content{
+    display: flex;
+    margin: 40px;
+}
+.title-content div{
+    margin-right: 15px;
+    padding: 10px 22px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.title-content div:hover{
+    transform: scale(1.1);
+}
+
+.info,
+.product{
+    height: 415px;
+    margin: 0 40px 40px 40px;
+    display: flex;
+    background-color: gray;
+    color: white;
+}
+.product{
+    display: none;
+}
+.info-left,
+.info-right,
+.product-left,
+.product-right{
+    padding: 20px;
+}
+.info-left-title,
+.info-right-title,
+.product-left-title,
+.product-right-title{
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: coral;
+}
+.info-left ul li,
+.info-right ul li,
+.product-left ul li,
+.product-right ul li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    color: white;
+}

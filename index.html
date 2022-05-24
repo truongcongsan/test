@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinh Nam Truong | Front-End Developer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!-- MENU -->
+    <div class="navbar">
+        <div class="logo">Trinh Nam Truong <br>Front-End Developer</div>
+        <div class="circle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- MAIN -->
+    <main>
+        <!-- SIDEBAR -->
+        <div class="sidebar-hide" id="sidebar">
+            <div class="btn-toggle open" onclick="hideShow()">
+                <div id="stick-one" class="stick one-close"></div>
+                <div id="stick-two" class="stick two-close"></div>
+                <div id="stick-three" class="stick three-close"></div>
+            </div>
+            <ul class="sidebar-menu">
+                <a href="#" class="sidebar-item"><li>item 1</li></a>
+                <a href="#" class="sidebar-item"><li>item 2</li></a>
+                <a href="#" class="sidebar-item"><li>item 3</li></a>
+                <a href="#" class="sidebar-item"><li>item 4</li></a>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="main-content">
+            <div class="title-content">
+                <div id="info" onclick="btnInfoProduct()">Thông tin</div>
+                <div id="product" onclick="btnInfoProduct()">Sản phẩm</div>
+            </div>
+            <div class="info">
+                <div class="info-left">
+                    <div class="info-left-title">
+                        Tổng quan
+                    </div>
+                    <ul>
+                        <li>Họ tên: Trịnh Nam Trường</li>
+                        <li>Ngày sinh: 06/03/2000</li>
+                        <li>Quê quán: Bình Minh - Kim Sơn - Ninh Bình</li>
+                        <li>Sdt: 0866914221</li>
+                        <li>Email: fireclub95@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="info-right">
+                    <div class="info-right-title">
+                        Kĩ năng
+                    </div>
+                    <ul>
+                        <li>Html: Tốt</li>
+                        <li>Css: Tốt</li>
+                        <li>Js: Trung bình</li>
+                        <li>ReactJs: Cơ bản</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-left">
+                    <div class="product-left-title">
+                        Web bán áo phông Astronaut
+                    </div>
+                    <ul>
+                        <li>Trạng thái: Đang hoàn thành...</li>
+                        <li>Thành phần: ReactJs + Ant Design</li>
+                        <li>Chức năng: 
+                            <br> + Phân loại sản phẩm.
+                            <br> + Xem chi tiết sản phẩm.
+                            <br> + Tìm kiếm sản phẩm.
+                            <br> + Phân trang sản phẩm.
+                            <br> + Thêm sản phẩm vào giỏ hàng.
+                        </li>
+                        <li>Link website: <a href="http://astronaut-t-shirt.surge.sh/">Click vào đây</a></li>
+                    </ul>
+                </div>
+
+                <div class="product-right">
+                    <div class="product-right-title">
+                        Web quản lí sinh viên
+                    </div>
+                    <ul>
+                        <li>Trạng thái: Hoàn thành.</li>
+                        <li>Thành phần: Html, Css, Js</li>
+                        <li>Chức năng: 
+                            <br> + Thêm sinh viên vào danh sách.
+                            <br> + Xóa sinh viên khỏi danh sách.
+                            <br> + Tìm kiếm sinh viên trong danh sách theo từng mục.
+                            <br> + Chỉnh sửa thông tin sinh viên trong danh sách.                         
+                        </li>
+                        <li>Link website: <a href="https://truongcongsan.github.io/quanlisinhvien/">Click vào đây</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JS -->
+    <script src="./assets/main.js"></script>
+</body>
+</html>
